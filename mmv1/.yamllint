@@ -1,8 +1,19 @@
 extends: default
 
+locale: en_US.UTF-8
 rules:
-  line-length: disable
+  colons:
+    level: warning
   # Comments indentation will look weird
   # because we want indentation to look
   # proper in unindentented versions
   comments: disable
+  empty-lines:
+    level: warning
+  indentation:
+    level: warning
+  line-length: disable
+  new-line-at-end-of-file:
+    level: warning
+  trailing-spaces:
+    level: warning
