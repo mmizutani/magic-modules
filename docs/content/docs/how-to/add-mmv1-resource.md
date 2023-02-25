@@ -459,3 +459,11 @@ Alternatively, for field promotions, you may use "{{service}}: promoted
 container: promoted `node_locations` field in google_container_cluster` to GA
 \`\`\`
 ```
+
+## Linting YAML files
+
+After editing the relevant YAML files for the MMv1 resources, it is recommended to lint the YAML files to detect syntax errors early and maintain consistent style:
+
+```bash
+make yamllint
+```
