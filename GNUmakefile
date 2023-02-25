@@ -80,6 +80,10 @@ test:
 		bundle; \
 		bundle exec rake test
 
+yamllint:
+	cd mmv1; \
+		yamllint -c .yamllint .
+
 serialize:
 	cd tpgtools;\
 		cp -f serialization.go.base serialization.go &&\
@@ -107,4 +111,4 @@ validate_environment:
 doctor:
 	./scripts/doctor
 
-.PHONY: mmv1 tpgtools test
+.PHONY: mmv1 tpgtools test yamllint

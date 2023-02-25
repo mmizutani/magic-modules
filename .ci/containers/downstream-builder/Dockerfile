@@ -50,7 +50,7 @@ RUN pyenv rehash
 ENV PATH="/root/.pyenv/shims:${PATH}"
 RUN pyenv global 2.7.13 3.6.8
 RUN pip install beautifulsoup4 mistune
-RUN pip3 install black
+RUN pip3 install black yamllint
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 
